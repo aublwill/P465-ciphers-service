@@ -1,17 +1,11 @@
-name: Run The Tests
+name: Run the Tests
 
-on:
-  push:
-    branches:
-      - master
-  
-  pull_request:
-    branches:
-      - master
+on: 
+  push
+
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +19,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Unit Testing
+    - name : Unit Testing
       run: |
         cd ciphers_project
         python manage.py test
