@@ -5,7 +5,7 @@ from .ciphers import caesar_encode
 # Create your views here.
 
 def greetings(request):
-    result = {"message":"Welcome to ciphers service!"}
+    result = {"message":"Welcome to ciphers service!!"}
     return JsonResponse(result)
 
 def encode(request, plaintext, shift):
