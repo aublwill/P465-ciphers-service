@@ -1,9 +1,7 @@
 name: Run the Tests, Build the image
 
 on: 
-  push:
-    branches:
-    - master
+  push
 
   pull_request:
     branches:
